@@ -1,0 +1,83 @@
+.navbar-header img{
+  height: 80px;
+  width: 100px;
+
+}
+.navbar{
+  height: 100px;
+  background-color: orange;
+}
+.nav{
+  background-color: pink;
+}
+.carousel-caption{
+  font-size: 16px;
+  color: black;
+}
+.carousel-caption h4{
+  font-size: 22px;
+  color: black;
+}
+.item{
+  margin:auto;
+}
+.item img{
+    height:300px;
+   margin:auto;
+   width:100%;
+    
+}
+
+#features{
+  text-align: center;
+}
+#features img{
+  margin: 0 0 20px;
+}
+
+.thumbnails{
+  margin: 20px 0;
+}
+.thumbnail{
+  position: relative;
+}
+.thumbnail h3{
+  font-size: 16px;
+  margin: 0 0 10px;
+  line-height: 20px;
+}
+.thumbnail .price{
+  font-size: 22px;
+  position: absolute;
+  top:-10px
+  right:-10px;
+  padding: 10px;
+
+}
+.thumbnail .price sup{
+  font-weight: normal;
+  font-size: 12px;
+}
+.thumbnail span.glyphicon{
+  margin-right: 5px;
+}
+
+footer{
+  background: #333;
+  color: #eee;
+  font-size: 11px;
+  padding: 20px;
+}
+ul.unstyled{
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 480px) {
+.thumbnail .price{
+  font-size: 14px;
+}
+.thumbnail .price sup{
+  font-size: 10px;
+}
+}

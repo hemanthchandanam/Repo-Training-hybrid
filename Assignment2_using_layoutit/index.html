@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap 3, from LayoutIt!</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+				<div class="navbar-header">
+
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button> <a class="navbar-brand" href="#">		<img src = "images/logo.png" alt= "Your logo" ></a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><br><br>
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="index.html"><strong>Home</strong></a>
+						</li>
+					
+					</ul>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control">
+						</div>
+
+            <button type="button" class="btn btn-info">
+                <span class="glyphicon glyphicon-search"></span> Search
+            </button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+
+						<li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user" ></span><strong>My Account</strong><strong class="caret"></strong></a>
+                          <ul class= "dropdown-menu">
+  													<li>
+  														<a href="#"><span class="glyphicon glyphicon-wrench"></span>Settings</a>
+  													</li>
+  													<li>
+  														<a href="#"><span class="glyphicon glyphicon-refresh"></span>Update Profile</a>
+  													</li>
+  													<li>
+  														<a href="#"><span class="glyphicon glyphicon-briefcase"></span>Billing</a>
+  													</li>
+                            <li class="divider"></li>
+  													<li>
+  														<a href="#"><span class="glyphicon glyphicon-off"></span>Sign Out</a>
+  													</li>
+  												</ul>
+						</li>
+					</ul>
+				</div>
+
+			</nav>
+
+
+
+
+
+
+
+  <div class="carousel slide" id = "myCarousel">
+       <!--Indictors-->
+      <ol class="carousel-indicators">
+  			<li class="active" data-slide-to = "0" data-target="#myCarousel"></li>
+  			<li data-slide-to = "1" data-target="#myCarousel"></li>
+  			<li data-slide-to = "2" data-target="#myCarousel"></li>
+  		</ol>
+  			<div class="carousel-inner">
+
+  				<div class="item active" id="slide1">
+  					<img src= "images/1.jpg">
+  					
+  				</div>
+
+
+  				<div class="item" id="slide2">
+  						<img src= "images/2.jpg">
+  					
+  				</div>
+
+  				<div class="item" id="slide3">
+  						<img src= "images/3.jpg">
+   				 
+   			 </div>
+
+  			</div>
+  			<a class ="left carousel-control" data-slide="prev" href="#myCarousel">
+  				<span class="icon-prev"></span>
+  			</a>
+
+  			<a class ="right carousel-control" data-slide="next" href="#myCarousel">
+  				<span class="icon-next"></span>
+  			</a>
+
+  		</div>
+
+
+
+
+
+  		<!-- <div class = "row" id="bigCallout">
+         <div class ="col-12">
+           <div class="alert alert-success alert-block fade in" id = "successAlert">
+  					 <button type="button" class="close" data-dismiss="alert">&times;</button>
+               <h4>Success!</h4>
+  						 <p>You have a message. Click the "x" in top right corner to close this..</p>
+  				 </div>
+
+  				 <div class="well well-small visible-sm">
+  					 <a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone">Give us a call</span></a>
+  				 </div>
+
+  				 <div class="well ">
+  					 <div class="page-header">
+                 <h1>SERVICES<small> We provide Amazing Solutions </small></h1>
+  					 </div>
+  					 <p>Explore our exotic stuffs to satisfy your taste budes. Use this area to come up with something real nice. Know what I am saying? </p>
+            <a href ="" class = "btn btn-large btn-primary" id=" alertMe">Explore, what we have!!</a>
+  				  <a href ="#" class = "btn btn-large btn-link">or click here</a>
+  				 </div>
+  			 </div>
+      </div>  -->
+
+
+
+
+
+  <div class = "row" id="featuresHeading">
+        <div class="col-12">
+           <h2> Our Services</h2>
+					 <p class="lead">Choose servuces you want</p>
+
+				</div>
+		</div>
+
+    <div class = "row" id="features">
+
+  				 <div class="col-sm-4 feature">
+              <div class ="panel">
+  							<div class ="panel-heading">
+  								<h3 class="panel-title">Food
+    						</div>
+  							<img src="images/food.jpg" alt = "HTML5" class="img-circle">
+  						</div>
+  					
+            <a href="#" target ="_blank" class = "btn btn-info btn-default">Order Food</a>
+  					</div>
+
+  					<div class="col-sm-4 feature">
+               <div class ="panel">
+   							<div class ="panel-heading">
+   								<h3 class="panel-title">Laundry</h3>
+     						</div>
+   							<img src="images/laundry.jpg" alt = "HTML5" class="img-circle">
+   						</div>
+   						
+             <a href="#" target ="_blank" class = "btn btn-success btn-default">Collect My Laundry</a>
+   					</div>
+
+  					<div class="col-sm-4 feature">
+               <div class ="panel">
+   							<div class ="panel-heading">
+   								<h3 class="panel-title">Transport</h3>
+     						</div>
+   							<img src="images/transport.jpg" alt = "HTML5" class="img-circle">
+   						</div>
+   					
+             <a href="#" target ="_blank" class = "btn btn-danger btn-default">Transport Needed</a>
+   					</div>
+
+  		</div>
+
+
+
+
+
+<br><br>
+	<div class="row">
+		<div class="col-md-6">
+      <h3>More Information</h3>
+			<div class="tabbable" id="tabs-609861">
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="#panel-578024" data-toggle="tab">Section 1</a>
+					</li>
+					<li>
+						<a href="#panel-767715" data-toggle="tab">Section 2</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="panel-578024">
+						  <h4> <span class="glyphicon glyphicon-map-marker"></span>Our Location<small>Like our favourite surf spot</small></h4>
+                                    <iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            												src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12619.627582372394!2d77.62737747779096!3d12.89538530449355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14bc1f875dd5%3A0x2b126387f21954a7!2sGarvebhavi+Palya%2C+Bengaluru%2C+Karnataka+560068!5e1!3m2!1sen!2sin!4v1467040854716" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+           <address>
+               <strong>IBIS Hotel</strong><br> <br> GB Palya<br> <abbr title="Phone">P:</abbr> (080) 90890890
+            </address>
+					</div>
+					<div class="tab-pane" id="panel-767715">
+            <h4>A floated picture<small>Placeholder</small></h4>
+                      <img src="http://placehold.it/140" class="thumbnail pull-left"/>
+
+
+                </div>
+					</div>
+				</div>
+			</div>
+
+<br><br>
+		<div class="col-md-6">
+			<dl>
+				<dt>
+					Description lists
+				</dt>
+				<dd>
+					A description list is perfect for defining terms.
+				</dd>
+				<dt>
+					Euismod
+				</dt>
+				<dd>
+					Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+				</dd>
+				<dd>
+					Donec id elit non mi porta gravida at eget metus.
+				</dd>
+				<dt>
+					Malesuada porta
+				</dt>
+				<dd>
+					Etiam porta sem malesuada magna mollis euismod.
+				</dd>
+				<dt>
+					Felis euismod semper eget lacinia
+				</dt>
+				<dd>
+					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+				</dd>
+			</dl>
+		</div>
+	</div>
+
+
+
+
+  <div class = "row" id="moreCourses">
+         <div class="col-12">
+					 <h3>Learn more about Us</h3>
+         </div>
+  </div>
+
+
+  <div class="row thumbnails">
+    <div class="col-md-6">
+      <div class="thumbnail">
+        <div class="label label-success price"><span class="glyphicon glyphicon-tag"><sup>$</sup>39</span></div>
+            <img src="images/rise.png"/>
+
+            <div class="caption">
+
+                <h3>POWERFUL INSIGHTS TO HELP GROW YOUR &amp; TASTE BUDS.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quod consequuntur quibusdam, enim expedita sed quia nesciunt incidunt accusamus necessitatibus modi adipisci officia libero accusantium esse hic, obcaecati, ullam, laboriosam!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vero, animi suscipit id facere officia. Aspernatur, quo, quos nisi dolorum aperiam fugiat deserunt velit rerum laudantium cum magnam excepturi quod, fuga architecto provident, cupiditate delectus voluptate eaque! Sit neque ut eum, voluptatibus odit cum dolorum ipsa voluptates inventore cumque a.</p>
+
+                <p><a href="http://www.Udemy.com" class="btn btn-primary btn-small" target="_blank">Learn More </a>
+                <a href="http://www.Udemy.com" class="btn btn-small btn-link" target="_blank">Or Click here </a> </p>
+            </div>
+
+    </div>
+  </div>
+
+    <div class="col-md-6">
+      <div class="thumbnail">
+         <div class="label label-info price"><span class="glyphicon glyphicon-tag"><sup>$</sup>50</span></div>
+        <img src="images/call.jpg"/>
+
+        <div class="caption">
+          <h3>ADVANCED OPTIONS.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quod consequuntur &amp; quibusdam, enim expedita sed quia nesciunt incidunt accusamus necessitatibus modi adipisci officia libero accusantium esse hic, obcaecati, ullam, laboriosam!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vero, animi suscipit id facere officia. Aspernatur, quo, quos nisi dolorum aperiam fugiat deserunt velit rerum laudantium cum magnam excepturi quod, fuga architecto provident, cupiditate delectus voluptate eaque! Sit neque ut eum, voluptatibus odit cum dolorum ipsa voluptates inventore cumque a.</p>
+           <p><a href="http://www.Udemy.com" class="btn btn-primary btn-small" target="_blank">Learn More </a>
+           <a href="http://www.Udemy.com" class="btn btn-small btn-link" target="_blank">Or Click here </a> </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+  <footer>
+<div class="row">
+    <div class="col-sm-2">
+           <h6>Copyright &copy; 2016 Hemantha</h6>
+   </div>
+   <div class="col-sm-4">
+           <h6>About Us</h6>
+           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vero, animi suscipit id facere officia. Aspernatur, quo, quos nisi dolorum aperiam fugiat deserunt velit rerum laudantium cum magnam excepturi quod, fuga architecto provident, cupiditate delectus voluptate eaque! Sit neque ut eum, voluptatibus odit cum dolorum ipsa voluptates inventore cumque a.</p>
+   </div>
+           <div class="col-sm-2">
+           <h6>Navigation</h6>
+            <ul class="unstyled">
+            <li><a href="#" >Home</a></li>
+            <li><a href="#" >Features</a></li>
+            <li><a href="#" >Pages</a></li>
+            <li><a href="portfolio.html" >Portfolio</a></li>
+            <li><a href="#" >Blog</a></li>
+            <li><a href="#" >Shop</a></li>
+              <li><a href="#" >ShortCodes</a></li>
+            </ul>
+           </div>
+           <div class="col-sm-2">
+               <h6>Follow Us</h6>
+               <ul class="unstyled">
+                   <li><a href="#">Twitter</a></li>
+                   <li><a href="#">Facebook</a></li>
+                   <li><a href="#">Google Plus</a></li>
+               </ul>
+         </div>
+         <div class ="col-sm-2">
+           <h6>Codded with<span class="glyphicon glyphicon-heart"></span>by Hemantha</h6>
+         </div>
+</div>
+</footer>
+
+
+
+
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
