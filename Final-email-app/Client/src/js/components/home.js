@@ -8,14 +8,13 @@ var home = React.createClass({
       <div className ="home">
         <div className="container-fluid">
 	       <div className="row">
-		       <div className="col-md-12">
+		       <div className="col-md-8">
 			        <div className="jumbotron">
 				          <h2>
-					             MailBox world!
+					             My email messages
 				          </h2>
 				          <p>
-					            The MailBox World brings you a list of messages from the gmail
-                      			 and lists the messages  of  both inbox and sent folder.
+					            Email messages are arrived !  Go to Indox to read
 				          </p>
 				          <p>
 					             <a className="btn btn-primary btn-large" href="#">Learn more</a>

@@ -28,8 +28,10 @@ var MainComponent = React.createClass({
 render(
   <Router history={browserHistory}>
   <Route path="/" component={MainComponent} >
-    <IndexRoute component={Inbox}/>
+    <IndexRoute component={home}/>
+    <Route path = "home" component={home} />
      <Route path = "Inbox" component={Inbox} />
+
       <Route path="msg" component={InboxMessageView}/>
       <Route path="msg/:id" handler={InboxMessageView}/>
      <Route path = "Sent" component={Sent} />
