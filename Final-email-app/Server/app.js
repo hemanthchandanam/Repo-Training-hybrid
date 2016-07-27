@@ -27,7 +27,7 @@ app.use(cookieParser());
 app.use("/",express.static(path.join(__dirname, '../Client/dist')));
 app.use("/Inbox",express.static(path.join(__dirname, '../Client/dist')));
 app.use("/Sent",express.static(path.join(__dirname, '../Client/dist')));
-app.use("/Home",express.static(path.join(__dirname, '../Client/dist')));
+app.use("/home",express.static(path.join(__dirname, '../Client/dist')));
 
 
 // Mongo db open

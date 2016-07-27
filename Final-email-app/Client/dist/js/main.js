@@ -25808,7 +25808,11 @@ var InboxMessageView = require('./InboxMessageView');
 var Link = require('react-router').Link;
 
 var InboxMessage = React.createClass({displayName: "InboxMessage",
+
+
+
   onAdd:function(){
+  //  alert(this.props.allMsgs.msgBody);
     	$.ajax({
         url: "http://localhost:8080/addmailtodb",
         dataType: 'json',
@@ -25822,16 +25826,49 @@ var InboxMessage = React.createClass({displayName: "InboxMessage",
         }.bind(this)
       });
     },
+
+
+
   render: function () {
     return (
-				React.createElement("tbody", null, 
-					React.createElement("tr", {className: "active"}, 
-						React.createElement("td", null, React.createElement(Link, {to: { pathname: 'msg/', query: { id: this.props.allMsgs.msgid }}}, this.props.allMsgs.msgFrom)), 
-						React.createElement("td", null, React.createElement(Link, {to: { pathname: 'msg/', query: { id: this.props.allMsgs.msgid }}}, this.props.allMsgs.msgSubject)), 
-						React.createElement("td", null, React.createElement(Link, {to: { pathname: 'msg/', query: { id: this.props.allMsgs.msgid }}}, this.props.allMsgs.msgReceivedOn)), 
-            React.createElement("td", null, React.createElement("a", {href: "javascript:void(0)", onClick: this.onAdd}, "Add"))
-					)
-				)
+
+      React.createElement("tbody", null, 
+        React.createElement("tr", {className: "active"}, 
+          React.createElement("td", null, React.createElement(Link, {to: { pathname: 'msg/', query: { id: this.props.allMsgs.msgid }}}, this.props.allMsgs.msgFrom)), 
+          React.createElement("td", null, React.createElement(Link, {to: { pathname: 'msg/', query: { id: this.props.allMsgs.msgid }}}, this.props.allMsgs.msgSubject)), 
+          React.createElement("td", null, React.createElement(Link, {to: { pathname: 'msg/', query: { id: this.props.allMsgs.msgid }}}, this.props.allMsgs.msgReceivedOn)), 
+          React.createElement("td", null, 
+          React.createElement("button", {type: "button", onClick: this.onAdd, className: "btn btn-info", "data-toggle": "modal"}, "Save")
+          ), 
+
+          React.createElement("td", null, 
+          React.createElement("button", {type: "button", className: "btn btn-info", "data-toggle": "modal", 
+          "data-target": "#myModal"+this.props.allMsgs.msgid}, "View")
+          ), 
+         React.createElement("td", null, 
+         React.createElement("div", {id: "myModal"+this.props.allMsgs.msgid, className: "modal fade", role: "dialog"}, 
+          React.createElement("div", {className: "modal-dialog"}, 
+
+            React.createElement("div", {className: "modal-content"}, 
+              React.createElement("div", {className: "modal-header"}, 
+                React.createElement("button", {type: "button", className: "close", "data-dismiss": "modal"}), 
+                React.createElement("h4", {className: "modal-title"}, "Modal Header")
+              ), 
+              React.createElement("div", {className: "modal-body"}, 
+                React.createElement("p", null, this.props.allMsgs.msgBody)
+              ), 
+              React.createElement("div", {className: "modal-footer"}, 
+                React.createElement("button", {type: "button", className: "btn btn-default", "data-dismiss": "modal", 
+                onClick: this.onAdd}, "Save"), 
+                React.createElement("button", {type: "button", className: "btn btn-default", "data-dismiss": "modal"}, "Close")
+              )
+            )
+
+          )
+        )
+       )
+        )
+      )
 
     );
   }
@@ -25859,7 +25896,7 @@ render: function() {
 					React.createElement("tr", null, 
             React.createElement("th", null, "From"), 
   					React.createElement("th", null, "Subject"), 
-  					React.createElement("th", null, "Date Time"), 
+  					React.createElement("th", null, "Date-Time"), 
             React.createElement("th", null, "Action")
           )
 				), 
@@ -25878,8 +25915,6 @@ module.exports = InboxMessageList;
 },{"./InboxMessage":236,"react":232,"react-dom":52}],238:[function(require,module,exports){
 var React= require('react');
 var ReactDom = require('react-dom');
-//var InboxMessageView = require('./SentMessageList');
-//var id = this.props.params.id;
 var InboxMessageView = React.createClass({displayName: "InboxMessageView",
 
   getInitialState: function(id){
@@ -25904,13 +25939,13 @@ var InboxMessageView = React.createClass({displayName: "InboxMessageView",
   });
     },
     componentWillMount: function(){
-    this.loadMsgData(this.props.location.query.id);
+    this.loadMsgData();
  },
 
   render: function() {
     return (
      React.createElement("div", null, 
-        React.createElement("h1", null, this.props.location.query.id)
+        React.createElement("h1", null)
     )
 
 
@@ -26040,18 +26075,15 @@ var home = React.createClass({displayName: "home",
       React.createElement("div", {className: "home"}, 
         React.createElement("div", {className: "container-fluid"}, 
 	       React.createElement("div", {className: "row"}, 
-		       React.createElement("div", {className: "col-md-12"}, 
+		       React.createElement("div", {className: "col-md-8"}, 
 			        React.createElement("div", {className: "jumbotron"}, 
 				          React.createElement("h2", null, 
-					             "MailBox world!"
+					             "My email messages"
 				          ), 
 				          React.createElement("p", null, 
-					            "The MailBox World brings you a list of messages from the gmail" + ' ' +
-                      			 "and lists the messages  of  both inbox and sent folder."
-				          ), 
-				          React.createElement("p", null, 
-					             React.createElement("a", {className: "btn btn-primary btn-large", href: "#"}, "Learn more")
+					            "Email messages are arrived !  Go to Indox to read"
 				          )
+				          
 			        )
 		        )
 	      )
@@ -26092,8 +26124,10 @@ var MainComponent = React.createClass({displayName: "MainComponent",
 render(
   React.createElement(Router, {history: browserHistory}, 
   React.createElement(Route, {path: "/", component: MainComponent}, 
-    React.createElement(IndexRoute, {component: Inbox}), 
+    React.createElement(IndexRoute, {component: home}), 
+    React.createElement(Route, {path: "home", component: home}), 
      React.createElement(Route, {path: "Inbox", component: Inbox}), 
+
       React.createElement(Route, {path: "msg", component: InboxMessageView}), 
       React.createElement(Route, {path: "msg/:id", handler: InboxMessageView}), 
      React.createElement(Route, {path: "Sent", component: Sent})

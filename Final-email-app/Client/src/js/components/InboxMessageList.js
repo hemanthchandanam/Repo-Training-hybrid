@@ -18,7 +18,7 @@ render: function() {
 					<tr>
             <th>From</th>
   					<th>Subject</th>
-  					<th>Date Time</th>
+  					<th>Date-Time</th>
             <th>Action</th>
           </tr>
 				</thead>

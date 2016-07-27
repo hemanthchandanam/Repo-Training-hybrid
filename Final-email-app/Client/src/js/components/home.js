@@ -16,9 +16,7 @@ var home = React.createClass({
 				          <p>
 					            Email messages are arrived !  Go to Indox to read
 				          </p>
-				          <p>
-					             <a className="btn btn-primary btn-large" href="#">Learn more</a>
-				          </p>
+				          
 			        </div>
 		        </div>
 	      </div>

@@ -1,7 +1,5 @@
 var React= require('react');
 var ReactDom = require('react-dom');
-//var InboxMessageView = require('./SentMessageList');
-//var id = this.props.params.id;
 var InboxMessageView = React.createClass({
 
   getInitialState: function(id){
@@ -26,13 +24,13 @@ var InboxMessageView = React.createClass({
   });
     },
     componentWillMount: function(){
-    this.loadMsgData(this.props.location.query.id);
+    this.loadMsgData();
  },
 
   render: function() {
     return (
      <div>
-        <h1>{this.props.location.query.id}</h1>
+        <h1></h1>
     </div>
 
 
