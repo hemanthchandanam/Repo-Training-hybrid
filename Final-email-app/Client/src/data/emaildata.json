@@ -1,0 +1,172 @@
+[
+	{
+		"msgid" : "1",
+		"labelType": "sent",
+		"msgFrom": "Sachin@gmail.Com",
+		"msgTo": "jiten@gmail.Com",
+		"msgSubject": "Sample mail",
+		"msgBody": "Sending a sample mail",
+		"msgSentOn": "2016-07-27 19:43:37 +0100",
+		"msgReceivedOn": "2016-07-27 19:43:37 +0100",
+		"hasAttachment": false,
+		"isRead": true
+	},
+	{
+		"msgid" : "2",
+		"labelType": "indox",
+		"msgFrom": "Atul@gmail.Com",
+		"msgTo": "Atul@gmail.Com",
+		"msgSubject": "Test mail",
+		"msgBody": "test email",
+		"msgSentOn": "2016-07-27 19:43:37 +0100",
+		"msgReceivedOn": "2016-07-27 19:43:37 +0100",
+		"hasAttachment": false,
+		"isRead": false
+	},
+	{
+		"msgid" : "3",
+		"labelType": "indox",
+		"msgFrom": "Dinesh@gmail.Com",
+		"msgTo": "Dinesh@gmail.Com",
+		"msgSubject": "Sample mail",
+		"msgBody": "Sample email",
+		"msgSentOn": "2016-07-27 19:43:37 +0100",
+		"msgReceivedOn": "2016-07-27 19:43:37 +0100",
+		"hasAttachment": false,
+		"isRead": true
+	},
+	{
+		"msgid" : "4",
+		"labelType": "indox",
+		"msgFrom": "Hemanth@gmail.Com",
+		"msgTo": "Hemanth@gmail.Com",
+		"msgSubject": "Hemanth mail",
+		"msgBody": "Hemanth :test  mail",
+		"msgSentOn": "2016-07-27 19:43:37 +0100",
+		"msgReceivedOn": "2016-07-27 19:43:37 +0100",
+		"hasAttachment": false,
+		"isRead": false
+	},
+	{
+		"msgid" : "5",
+		"labelType": "indox",
+		"msgFrom": "Jethin@gmail.Com",
+		"msgTo": "Jethin@gmail.Com",
+		"msgSubject": "Ashok mail",
+		"msgBody": "Ashok :test  mail",
+		"msgSentOn": "2016-07-27 19:43:37 +0100",
+		"msgReceivedOn": "2016-07-27 19:43:37 +0100",
+		"hasAttachment": false,
+		"isRead": false
+	}
+	,
+	{
+		"msgid" : "6",
+		"labelType": "indox",
+		"msgFrom": "kirubha@gmail.Com",
+		"msgTo": "kirubha@gmail.Com",
+		"msgSubject": "Test mail",
+		"msgBody": "test email",
+		"msgSentOn": "2016-07-27 19:43:37 +0100",
+		"msgReceivedOn": "2016-07-27 19:43:37 +0100",
+		"hasAttachment": false,
+		"isRead": false
+	},
+
+	{
+		"msgid" : "7",
+		"labelType": "indox",
+		"msgFrom": "Muthu@gmail.Com",
+		"msgTo": "Muthu@gmail.Com",
+		"msgSubject": "Test mail",
+		"msgBody": "test email",
+		"msgSentOn": "2016-07-27 19:43:37 +0100",
+		"msgReceivedOn": "2016-07-27 19:43:37 +0100",
+		"hasAttachment": false,
+		"isRead": false
+	},
+	{
+		"msgid" : "8",
+		"labelType": "indox",
+		"msgFrom": "Ashok@gmail.Com",
+		"msgTo": "Ashok@gmail.Com",
+		"msgSubject": "Test mail",
+		"msgBody": "test email",
+		"msgSentOn": "2016-07-27 19:43:37 +0100",
+		"msgReceivedOn": "2016-07-27 19:43:37 +0100",
+		"hasAttachment": false,
+		"isRead": false
+	},
+	{
+		"msgid" : "9",
+		"labelType": "indox",
+		"msgFrom": "Santhosh@gmail.Com",
+		"msgTo": "Santosh@gmail.Com",
+		"msgSubject": "Test mail",
+		"msgBody": "test email",
+		"msgSentOn": "2016-07-27 19:43:37 +0100",
+		"msgReceivedOn": "2016-07-27 19:43:37 +0100",
+		"hasAttachment": false,
+		"isRead": false
+	},
+	{
+		"msgid" : "10",
+		"labelType": "indox",
+		"msgFrom": "Siri@gmail.Com",
+		"msgTo": "Siri@gmail.Com",
+		"msgSubject": "Test mail",
+		"msgBody": "test email",
+		"msgSentOn": "2016-07-27 19:43:37 +0100",
+		"msgReceivedOn": "2016-07-27 19:43:37 +0100",
+		"hasAttachment": false,
+		"isRead": false
+	},
+	{
+		"msgid" : "11",
+		"labelType": "indox",
+		"msgFrom": "Siri@gmail.Com",
+		"msgTo": "Siri@gmail.Com",
+		"msgSubject": "Test mail",
+		"msgBody": "test email",
+		"msgSentOn": "2016-07-27 19:43:37 +0100",
+		"msgReceivedOn": "2016-07-27 19:43:37 +0100",
+		"hasAttachment": false,
+		"isRead": false
+	},
+	{
+		"msgid" : "12",
+		"labelType": "indox",
+		"msgFrom": "Siri@gmail.Com",
+		"msgTo": "Siri@gmail.Com",
+		"msgSubject": "Test mail",
+		"msgBody": "test email",
+		"msgSentOn": "2016-07-27 19:43:37 +0100",
+		"msgReceivedOn": "2016-07-27 19:43:37 +0100",
+		"hasAttachment": false,
+		"isRead": false
+	},
+	{
+		"msgid" : "13",
+		"labelType": "indox",
+		"msgFrom": "Siri@gmail.Com",
+		"msgTo": "Siri@gmail.Com",
+		"msgSubject": "Test mail",
+		"msgBody": "test email",
+		"msgSentOn": "2016-07-27 19:43:37 +0100",
+		"msgReceivedOn": "2016-07-27 19:43:37 +0100",
+		"hasAttachment": false,
+		"isRead": false
+	},
+	{
+		"msgid" : "14",
+		"labelType": "indox",
+		"msgFrom": "Siri@gmail.Com",
+		"msgTo": "Siri@gmail.Com",
+		"msgSubject": "Test mail",
+		"msgBody": "test email",
+		"msgSentOn": "2016-07-27 19:43:37 +0100",
+		"msgReceivedOn": "2016-07-27 19:43:37 +0100",
+		"hasAttachment": false,
+		"isRead": false
+	}
+]
